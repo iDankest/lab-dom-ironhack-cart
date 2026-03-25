@@ -20,6 +20,8 @@ function calculateAll() {
 
   // ITERATION 2
   //... your code goes here
+  const products = document.querySelectorAll('.product')
+  products.forEach(product => updateSubtotal(product))
 
 
   // ITERATION 3
