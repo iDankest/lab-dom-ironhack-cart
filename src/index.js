@@ -69,7 +69,9 @@ function createProduct() {
          
   `
   document.querySelector('tbody').appendChild(createEl)
-  
+  const newRemoveBtn = createEl.querySelector('.btn-remove')
+  newRemoveBtn.addEventListener('click', removeProduct)
+
   document.querySelector('[placeholder="Product Name"]').value = ""
   document.querySelector('[placeholder="Product Price"]').value = 0
 }
@@ -85,4 +87,5 @@ window.addEventListener('load', () => {
   })
   const botonCreate = document.querySelector('#create')
   botonCreate.addEventListener('click', createProduct)
+
 });
