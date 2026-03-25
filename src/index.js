@@ -26,6 +26,10 @@ function calculateAll() {
 
   // ITERATION 3
   //... your code goes here
+  let total = 0;
+
+  products.forEach(product => {total += updateSubtotal(product)})
+ return document.querySelector('#total-value').innerHTML = total
 }
 
 // ITERATION 4
