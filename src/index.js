@@ -28,7 +28,7 @@ function calculateAll() {
   //... your code goes here
   let total = 0;
 
-  products.forEach(product => {total += updateSubtotal(product)})
+  products.forEach(product => total += updateSubtotal(product))
  return document.querySelector('#total-value').innerHTML = total
 }
 
